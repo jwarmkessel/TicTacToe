@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface PSPlayStudioAPI : NSObject
-
++ (void)createGame;
++ (void)removeGame;
++ (void)saveGame:(NSNumber *)gridButton player:(NSNumber *)player;
++ (NSData *)retrieveGame;
 @end

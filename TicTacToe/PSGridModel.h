@@ -10,4 +10,16 @@
 
 @interface PSGridModel : NSObject
 
+@property (nonatomic , retain) NSMutableArray *grid;
+@property (nonatomic , retain) NSMutableArray *solves;
+@property (nonatomic , retain) NSNumber *size;
+
+- (id)init;
+- (id)initWithSize:(NSNumber *) gridSize;
+- (void)resetGrid;
+- (BOOL)setPlayer: (NSNumber *)player atGridLocation: (NSNumber *)location;
+- (void)createSolvables;
+- (NSNumber *)getWinner;
+- (NSNumber *)getNextOpenSpot;
+
 @end

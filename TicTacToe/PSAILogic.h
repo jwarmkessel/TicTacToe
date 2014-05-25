@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PSGridModel.h"
 
 @interface PSAILogic : NSObject
-
++ (NSArray *)getBestMoveForGrid: (PSGridModel *)gridModel AndPlayer: (NSNumber *)player WithDepth: (NSNumber *)depth;
 @end

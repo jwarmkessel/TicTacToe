@@ -10,22 +10,33 @@
 
 @implementation PSGridCellButton
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
+- (id)init {
+	self = [super init];
+	[self setBackgroundColor:[UIColor whiteColor]];
+	[self.layer setBorderColor:[[UIColor blackColor] CGColor]];
+	[self.layer setBorderWidth:2.0f];
+    
+    [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	
+	return self;
+}
+- (void) setFrame:(CGRect)frame	{
+	
+	[super setFrame:frame];
+	self.titleLabel.font = [UIFont boldSystemFontOfSize: self.frame.size.height];
+}
+- (void)reset {
+	[self setTitle:@"" forState:UIControlStateNormal];
+	[self setUserInteractionEnabled: YES];
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+- (void)setPlayer: (NSNumber *) player {
+	if ([player intValue] == 1) {
+		[self setTitle:@"x" forState:UIControlStateNormal];
+	} else {
+		[self setTitle:@"o" forState:UIControlStateNormal];
+	}
+	[self setUserInteractionEnabled: NO];
 }
-*/
 
 @end

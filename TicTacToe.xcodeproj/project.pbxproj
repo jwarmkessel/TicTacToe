@@ -21,6 +21,11 @@
 		83255A3219301D9000E357B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83255A1419301D8F00E357B1 /* UIKit.framework */; };
 		83255A3A19301D9000E357B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83255A3819301D9000E357B1 /* InfoPlist.strings */; };
 		83255A3C19301D9000E357B1 /* TicTacToeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83255A3B19301D9000E357B1 /* TicTacToeTests.m */; };
+		83255A47193020E100E357B1 /* PSGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83255A46193020E100E357B1 /* PSGridView.m */; };
+		83255A4A193020FB00E357B1 /* PSGridModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83255A49193020FB00E357B1 /* PSGridModel.m */; };
+		83255A4D193022F800E357B1 /* PSGridCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83255A4C193022F800E357B1 /* PSGridCellButton.m */; };
+		8368D7C1193136A200EA2140 /* PSAILogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8368D7C0193136A200EA2140 /* PSAILogic.m */; };
+		8368D7C41931557E00EA2140 /* PSPlayStudioAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8368D7C31931557E00EA2140 /* PSPlayStudioAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		83255A3719301D9000E357B1 /* TicTacToeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicTacToeTests-Info.plist"; sourceTree = "<group>"; };
 		83255A3919301D9000E357B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83255A3B19301D9000E357B1 /* TicTacToeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicTacToeTests.m; sourceTree = "<group>"; };
+		83255A45193020E100E357B1 /* PSGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSGridView.h; sourceTree = "<group>"; };
+		83255A46193020E100E357B1 /* PSGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSGridView.m; sourceTree = "<group>"; };
+		83255A48193020FB00E357B1 /* PSGridModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSGridModel.h; sourceTree = "<group>"; };
+		83255A49193020FB00E357B1 /* PSGridModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSGridModel.m; sourceTree = "<group>"; };
+		83255A4B193022F800E357B1 /* PSGridCellButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSGridCellButton.h; sourceTree = "<group>"; };
+		83255A4C193022F800E357B1 /* PSGridCellButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSGridCellButton.m; sourceTree = "<group>"; };
+		8368D7BF193136A200EA2140 /* PSAILogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAILogic.h; sourceTree = "<group>"; };
+		8368D7C0193136A200EA2140 /* PSAILogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAILogic.m; sourceTree = "<group>"; };
+		8368D7C21931557E00EA2140 /* PSPlayStudioAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPlayStudioAPI.h; sourceTree = "<group>"; };
+		8368D7C31931557E00EA2140 /* PSPlayStudioAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPlayStudioAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +97,7 @@
 		83255A0419301D8F00E357B1 = {
 			isa = PBXGroup;
 			children = (
+				83255A2219301D9000E357B1 /* Main.storyboard */,
 				83255A1619301D8F00E357B1 /* TicTacToe */,
 				83255A3519301D9000E357B1 /* TicTacToeTests */,
 				83255A0F19301D8F00E357B1 /* Frameworks */,
@@ -114,11 +130,20 @@
 			children = (
 				83255A1F19301D8F00E357B1 /* PSAppDelegate.h */,
 				83255A2019301D8F00E357B1 /* PSAppDelegate.m */,
-				83255A2219301D9000E357B1 /* Main.storyboard */,
 				83255A2519301D9000E357B1 /* PSViewController.h */,
 				83255A2619301D9000E357B1 /* PSViewController.m */,
 				83255A2819301D9000E357B1 /* Images.xcassets */,
 				83255A1719301D8F00E357B1 /* Supporting Files */,
+				83255A45193020E100E357B1 /* PSGridView.h */,
+				83255A46193020E100E357B1 /* PSGridView.m */,
+				83255A48193020FB00E357B1 /* PSGridModel.h */,
+				83255A49193020FB00E357B1 /* PSGridModel.m */,
+				83255A4B193022F800E357B1 /* PSGridCellButton.h */,
+				83255A4C193022F800E357B1 /* PSGridCellButton.m */,
+				8368D7BF193136A200EA2140 /* PSAILogic.h */,
+				8368D7C0193136A200EA2140 /* PSAILogic.m */,
+				8368D7C21931557E00EA2140 /* PSPlayStudioAPI.h */,
+				8368D7C31931557E00EA2140 /* PSPlayStudioAPI.m */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -200,6 +225,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Justin Warmkessel";
 				TargetAttributes = {
+					83255A0C19301D8F00E357B1 = {
+						DevelopmentTeam = 9J6N543K6L;
+					};
 					83255A2D19301D9000E357B1 = {
 						TestTargetID = 83255A0C19301D8F00E357B1;
 					};
@@ -250,9 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83255A4A193020FB00E357B1 /* PSGridModel.m in Sources */,
 				83255A1D19301D8F00E357B1 /* main.m in Sources */,
+				8368D7C1193136A200EA2140 /* PSAILogic.m in Sources */,
 				83255A2719301D9000E357B1 /* PSViewController.m in Sources */,
 				83255A2119301D8F00E357B1 /* PSAppDelegate.m in Sources */,
+				83255A4D193022F800E357B1 /* PSGridCellButton.m in Sources */,
+				83255A47193020E100E357B1 /* PSGridView.m in Sources */,
+				8368D7C41931557E00EA2140 /* PSPlayStudioAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +322,7 @@
 				83255A2319301D9000E357B1 /* Base */,
 			);
 			name = Main.storyboard;
+			path = TicTacToe;
 			sourceTree = "<group>";
 		};
 		83255A3819301D9000E357B1 /* InfoPlist.strings */ = {
@@ -377,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TicTacToe/TicTacToe-Prefix.pch";
 				INFOPLIST_FILE = "TicTacToe/TicTacToe-Info.plist";
@@ -390,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TicTacToe/TicTacToe-Prefix.pch";
 				INFOPLIST_FILE = "TicTacToe/TicTacToe-Info.plist";
@@ -457,6 +493,7 @@
 				83255A4119301D9000E357B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83255A4219301D9000E357B1 /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +502,7 @@
 				83255A4419301D9000E357B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

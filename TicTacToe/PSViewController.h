@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PSGridView.h"
+#import "PSGridModel.h"
+#import "PSAILogic.h"
 
-@interface PSViewController : UIViewController
+@interface PSViewController : UIViewController <PSViewControllerDelegate>
+
+@property (retain , nonatomic) PSGridModel *gridModel;
+@property (retain , nonatomic) PSGridView *gridView;
+@property (retain , nonatomic) NSNumber *currentPlayer;
 
 @end

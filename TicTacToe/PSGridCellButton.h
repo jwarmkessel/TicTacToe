@@ -10,4 +10,9 @@
 
 @interface PSGridCellButton : UIButton
 
+- (id)init;
+- (void)setFrame:(CGRect)frame;
+- (void)reset;
+- (void)setPlayer: (NSNumber *) player;
+
 @end
